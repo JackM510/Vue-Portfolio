@@ -55,14 +55,12 @@
 body {
   margin: 0;
 }
-
 h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
 }
-
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
@@ -84,7 +82,6 @@ h2 {
 p {
   margin: 0;
 }
-
 code,
 .counter {
   font-family: var(--mono);
@@ -92,14 +89,12 @@ code,
   border-radius: 4px;
   color: var(--text-h);
 }
-
 code {
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
 }
-
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -109,7 +104,6 @@ code {
   border: 2px solid transparent;
   transition: border-color 0.3s;
   margin-bottom: 24px;
-
   &:hover {
     border-color: var(--accent-border);
   }
@@ -294,5 +288,16 @@ code {
   &::after {
     right: 0;
     border-right-color: var(--border);
+  }
+}
+
+
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  transition: opacity 200ms;
+  &:hover {
+    opacity: 0.8;
   }
 }
