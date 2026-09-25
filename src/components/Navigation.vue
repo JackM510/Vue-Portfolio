@@ -1,8 +1,7 @@
 <script setup lang="ts">
     import { ref, onMounted, onUnmounted } from 'vue';
     import { Menu } from '@lucide/vue';
-    import github from '../assets/github.svg';
-    import linkedin from '../assets/linkedin.svg';
+    import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
     /* --- Handle Resizing --- */
     const isOpen = ref(false); 
@@ -56,10 +55,10 @@
         </ul>
         <div class="ml-auto flex gap-6">
             <a href="https://github.com/JackMarshall97/">
-                <img :src="github" class="w-8 h-8 transition-opacity duration-200 hover:opacity-80" alt="GitHub logo" />
+                <FontAwesomeIcon :icon="faGithub" class="icon"/>
             </a>
             <a href="https://www.linkedin.com/in/jackmarshall97/">
-                <img :src="linkedin" class="w-8 h-8 transition-opacity duration-200 hover:opacity-80" alt="LinkedIn logo" />
+                <FontAwesomeIcon :icon="faLinkedin" class="icon"/>
             </a>
         </div> 
     </nav>
